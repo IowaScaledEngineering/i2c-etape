@@ -6,11 +6,11 @@ FileVersion[20070407]
 PCB["" 100000 100000]
 
 Grid[500.0 0 0 0]
-Cursor[0 0 0.000000]
+Cursor[19500 14500 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[800 800 800 1000 2000 800]
-Flags("showdrc,rubberband,nameonpcb,clearnew,snappin")
+Flags("showdrc,rubberband,nameonpcb,clearnew")
 Groups("1,c:2,3,s")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -789,10 +789,10 @@ Symbol['~' 1200]
 Attribute("PCB::grid::unit" "mil")
 Via[75000 22500 3600 2000 0 2000 "" ""]
 Via[45000 51500 3600 2000 0 2000 "" ""]
-Via[39500 56500 3600 2000 0 2000 "" ""]
+Via[39500 57500 3600 2000 0 2000 "" ""]
 Via[13000 43500 3600 2000 0 2000 "" ""]
 Via[11500 48000 3600 2000 0 2000 "" ""]
-Via[34500 60500 3600 2000 0 2000 "" ""]
+Via[30500 61000 3600 2000 0 2000 "" ""]
 
 Element["hidename" "JUMPER2" "J3" "unknown" 87000 55000 -11000 5000 1 100 ""]
 (
@@ -929,8 +929,6 @@ Layer(1 "component")
 	Line[61543 89457 60500 90500 1000 2000 "clearline"]
 	Line[39500 90500 60500 90500 1000 2000 "clearline"]
 	Line[50000 35000 50000 35500 2000 2000 "clearline"]
-	Line[34246 48030 46970 48030 1000 2000 "clearline"]
-	Line[46970 48030 50000 45000 1000 2000 "clearline"]
 	Line[82457 67000 82457 49543 1000 2000 "clearline"]
 	Line[82457 49543 87000 45000 1000 2000 "clearline"]
 	Line[89543 67000 89543 62043 1000 2000 "clearline"]
@@ -940,7 +938,6 @@ Layer(1 "component")
 	Line[80457 47500 69500 47500 1000 2000 "clearline"]
 	Line[69500 47500 64500 52500 1000 2000 "clearline"]
 	Line[64500 52500 57500 52500 1000 2000 "clearline"]
-	Line[57500 52500 50000 45000 1000 2000 "clearline"]
 	Line[54457 85000 54457 79543 1000 2000 "clearline"]
 	Line[54457 79543 56500 77500 1000 2000 "clearline"]
 	Line[56500 77500 75000 77500 1000 2000 "clearline"]
@@ -956,11 +953,7 @@ Layer(1 "component")
 	Line[27000 15000 38457 15000 1000 2000 "clearline"]
 	Line[34246 46060 34500 45806 1000 2000 "clearline"]
 	Line[34500 45806 34500 41500 1000 2000 ""]
-	Line[34246 51970 39970 51970 1000 2000 "clearline"]
-	Line[39970 51970 43000 55000 1000 2000 "clearline"]
 	Line[43000 55000 50000 55000 1000 2000 "clearline"]
-	Line[34246 53940 36940 53940 1000 2000 "clearline"]
-	Line[36940 53940 39500 56500 1000 2000 "clearline"]
 	Line[17754 53940 23000 53940 1000 2000 ""]
 	Line[62000 47500 50000 35500 5000 2000 "clearline"]
 	Line[50000 45000 46500 41500 5000 2000 "clearline"]
@@ -990,13 +983,24 @@ Layer(1 "component")
 	Line[8000 45500 9500 44000 1000 2000 "clearline"]
 	Line[9500 44000 9500 32500 1000 2000 "clearline"]
 	Line[27000 15000 9500 32500 1000 2000 "clearline"]
-	Line[34500 60500 42000 60500 1000 2000 "clearline"]
-	Line[42000 60500 45500 64000 1000 2000 "clearline"]
+	Line[30500 61000 42500 61000 1000 2000 "clearline"]
+	Line[42500 61000 45500 64000 1000 2000 "clearline"]
 	Line[45500 64000 45500 67500 1000 2000 "clearline"]
 	Line[45500 67500 48500 70500 1000 2000 "clearline"]
 	Line[48500 70500 59000 70500 1000 2000 "clearline"]
 	Line[59000 70500 62000 67500 1000 2000 "clearline"]
 	Line[62000 67500 62000 57500 1000 2000 "clearline"]
+	Line[34246 48030 46530 48030 1000 2000 "clearline"]
+	Line[46530 48030 49000 50500 1000 2000 "clearline"]
+	Line[49000 50500 55500 50500 1000 2000 "clearline"]
+	Line[55500 50500 57500 52500 1000 2000 "clearline"]
+	Line[34246 53940 41940 53940 1000 2000 "clearline"]
+	Line[41940 53940 43000 55000 1000 2000 "clearline"]
+	Line[34246 51970 31030 51970 1000 2000 "clearline"]
+	Line[31030 51970 30000 53000 1000 2000 "clearline"]
+	Line[30000 53000 30000 55500 1000 2000 "clearline"]
+	Line[30000 55500 32000 57500 1000 2000 "clearline"]
+	Line[32000 57500 39500 57500 1000 2000 "clearline"]
 	Polygon("clearpoly")
 	(
 		[14500 31500] [19500 31500] [19500 44000] [14500 44000] 
@@ -1035,8 +1039,6 @@ Layer(2 "solder")
 	Line[78500 55000 76000 57500 1000 2000 "clearline"]
 	Line[76000 57500 69500 57500 1000 2000 "clearline"]
 	Line[69500 57500 64500 62500 1000 2000 "clearline"]
-	Line[39500 56500 39500 45500 1000 2000 "clearline"]
-	Line[39500 45500 50000 35000 1000 2000 "clearline"]
 	Line[64500 62500 55000 62500 1000 2000 "clearline"]
 	Line[55000 62500 52500 60000 1000 2000 "clearline"]
 	Line[52500 60000 47000 60000 1000 2000 "clearline"]
@@ -1052,8 +1054,10 @@ Layer(2 "solder")
 	Line[21500 20500 9500 32500 1000 2000 "clearline"]
 	Line[9500 32500 9500 46000 1000 2000 "clearline"]
 	Line[9500 46000 11500 48000 1000 2000 "clearline"]
-	Line[13000 43500 30000 60500 1000 2000 "clearline"]
-	Line[30000 60500 34500 60500 1000 2000 "clearline"]
+	Line[13000 43500 30500 61000 1000 2000 "clearline"]
+	Line[50000 45000 43000 45000 1000 2000 "clearline"]
+	Line[43000 45000 39500 48500 1000 2000 "clearline"]
+	Line[39500 48500 39500 57500 1000 2000 "clearline"]
 )
 Layer(3 "outline")
 (
@@ -1071,54 +1075,57 @@ NetList()
 	Net("GND" "(unknown)")
 	(
 		Connect("C1-2")
-		Connect("C2-2")
 		Connect("J1-3")
 		Connect("J2-2")
-		Connect("J3-2")
 		Connect("R3-1")
 		Connect("R4-1")
-		Connect("U1-4")
+		Connect("U1-2")
 		Connect("U1-5")
 	)
 	Net("unnamed_net1" "(unknown)")
+	(
+		Connect("J2-3")
+		Connect("J2-4")
+		Connect("U1-1")
+	)
+	Net("unnamed_net2" "(unknown)")
+	(
+		Connect("C2-1")
+		Connect("J3-1")
+		Connect("U1-3")
+	)
+	Net("unnamed_net3" "(unknown)")
+	(
+		Connect("C2-2")
+		Connect("J3-2")
+		Connect("U1-4")
+	)
+	Net("unnamed_net4" "(unknown)")
 	(
 		Connect("C1-1")
 		Connect("J1-4")
 		Connect("J2-1")
 		Connect("R1-1")
 		Connect("R2-1")
-		Connect("U1-1")
 		Connect("U1-10")
 	)
-	Net("unnamed_net2" "(unknown)")
-	(
-		Connect("J2-3")
-		Connect("J2-4")
-		Connect("U1-2")
-	)
-	Net("unnamed_net3" "(unknown)")
-	(
-		Connect("C2-1")
-		Connect("J3-1")
-		Connect("U1-3")
-	)
-	Net("unnamed_net4" "(unknown)")
+	Net("unnamed_net5" "(unknown)")
 	(
 		Connect("J1-2")
 		Connect("U1-6")
 	)
-	Net("unnamed_net5" "(unknown)")
+	Net("unnamed_net6" "(unknown)")
 	(
 		Connect("J1-5")
 		Connect("U1-7")
 	)
-	Net("unnamed_net6" "(unknown)")
+	Net("unnamed_net7" "(unknown)")
 	(
 		Connect("R1-2")
 		Connect("R3-2")
 		Connect("U1-8")
 	)
-	Net("unnamed_net7" "(unknown)")
+	Net("unnamed_net8" "(unknown)")
 	(
 		Connect("R2-2")
 		Connect("R4-2")
