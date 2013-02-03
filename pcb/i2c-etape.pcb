@@ -6,11 +6,11 @@ FileVersion[20070407]
 PCB["" 175000 175000]
 
 Grid[500.0 0 0 0]
-Cursor[0 19000 0.000000]
+Cursor[0 18000 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[800 800 800 1000 2000 800]
-Flags("showdrc,rubberband,nameonpcb,clearnew,snappin")
+Flags("showdrc,rubberband,nameonpcb,clearnew,snappin,orthomove")
 Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -798,7 +798,7 @@ Via[119500 95500 3600 2000 0 2000 "" ""]
 Via[130500 87500 3600 2000 0 2000 "" ""]
 Via[135000 87500 3600 2000 0 2000 "" ""]
 
-Element["onsolder" "JUMPER2" "J3" "unknown" 82500 125000 -13000 -2500 1 100 "auto"]
+Element["onsolder" "JUMPER2" "J3" "unknown" 82500 125000 -12500 3000 0 100 "auto"]
 (
 	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
 	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
@@ -811,7 +811,7 @@ Element["onsolder" "JUMPER2" "J3" "unknown" 82500 125000 -13000 -2500 1 100 "aut
 
 	)
 
-Element["onsolder" "JUMPER4" "J2" "unknown" 72500 87500 -13000 -2500 1 100 "auto"]
+Element["onsolder" "JUMPER4" "J2" "unknown" 72500 87500 -13000 3000 0 100 "auto"]
 (
 	Pin[0 0 6000 2000 6600 3800 "1" "1" "square,edge2,thermal(0X)"]
 	Pin[10000 0 6000 2000 6600 3800 "2" "2" "edge2,thermal(1X)"]
@@ -1049,6 +1049,12 @@ Layer(3 "outline")
 )
 Layer(4 "silk")
 (
+	Arc[87500 87500 87000 87000 1000 2000 0 360 "clearline"]
+	Arc[87500 87500 74500 74500 1000 2000 0 360 "clearline"]
+	Text[59000 51500 0 100 "http://iascaled.com" "clearline,onsolder"]
+	Text[64000 36500 0 100 "CC BY-SA (C)2013" "clearline,onsolder"]
+	Text[54500 44000 0 100 "Iowa Scaled Engineering" "clearline,onsolder"]
+	Text[67000 59000 0 100 "I2C-ETAPE v1.0" "clearline,onsolder"]
 )
 Layer(5 "silk")
 (
