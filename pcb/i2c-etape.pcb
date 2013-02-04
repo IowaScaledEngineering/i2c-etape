@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 175000 175000]
 
 Grid[500.0 0 0 0]
-Cursor[5500 23500 0.000000]
+Cursor[1500 7000 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[800 800 800 1000 2000 800]
@@ -1045,6 +1045,10 @@ Layer(2 "solder")
 )
 Layer(3 "outline")
 (
+	Line[0 87500 0 87500 1000 2000 "clearline"]
+	Line[175000 87500 175000 87500 1000 2000 "clearline"]
+	Line[87500 0 87500 0 1000 2000 "clearline"]
+	Line[87500 175000 87500 175000 1000 2000 "clearline"]
 	Arc[87500 87500 87500 87500 1000 2000 0 360 "clearline"]
 )
 Layer(4 "silk")
